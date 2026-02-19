@@ -40,6 +40,11 @@ module.exports = ({ env }) => ({
         timeout: env('TIMEOUT'),
         secure: env('OSS_SECURE'),
         internal: env.bool('OSS_INTERNAL', false),
+        uploadParams: {
+          headers: {
+            'Content-Disposition': 'inline', // default value
+          },
+        },
         bucketParams: {
           ACL: 'private', // default is 'public-read'
           signedUrlExpires: 60 * 60 // default is 30 * 60 (30min)
@@ -90,6 +95,7 @@ Property | type |  value
 **timeout** | integer | OSS upload timeout (unit: seconds)
 **secure** | boolean | will https mode be enabled for oss client
 **internal** | boolean | access OSS with aliyun internal network or not, default is false. If your servers are running on aliyun too, you can set true to save lot of money.
+**uploadParams** | object | extra params passed to `ossClient.put()`. Default includes `headers['Content-Disposition'] = 'inline'` to avoid forced download.
 
 
 # OSS Region reference
