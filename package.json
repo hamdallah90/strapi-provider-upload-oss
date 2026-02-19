@@ -1,6 +1,6 @@
 {
   "name": "strapi-provider-upload-oss",
-  "version": "0.2.2",
+  "version": "1.0.0",
   "description": "Aliyun OSS provider for strapi upload",
   "homepage": "http://strapi.io",
   "keywords": [
@@ -33,10 +33,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/hezzze/strapi-provider-upload-oss.git"
+    "url": "git://github.com/hamdallah90/strapi-provider-upload-oss.git"
   },
   "bugs": {
-    "url": "https://github.com/hezzze/strapi-provider-upload-oss/issues"
+    "url": "https://github.com/hamdallah90/strapi-provider-upload-oss/issues"
   },
   "engines": {
     "node": ">= 10.0.0",
