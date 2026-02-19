@@ -1,5 +1,5 @@
 {
-  "name": "strapi-provider-upload-oss",
+  "name": "strapi-provider-upload-oss-v2",
   "version": "1.0.1",
   "description": "Aliyun OSS provider for strapi upload",
   "homepage": "http://strapi.io",
